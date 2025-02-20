@@ -46,6 +46,12 @@ def main():
                     l1 += step
                 elif event.key == pygame.K_LEFT:
                     l1 -= step
+                elif event.key == pygame.K_PAGEUP:
+                    if z < 21:
+                        z += 1
+                elif event.key == pygame.K_PAGEDOWN:
+                    if z > 2:
+                        z -= 1
 
                 l2 = max(-90, min(l2, 90))
                 l1 = max(-180, min(l1, 180))
